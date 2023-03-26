@@ -6,6 +6,9 @@ import Example from './components/Example';
 import GoogleMap from './components/GoogleMap';
 import Curriculum from './components/Curriculum';
 import Home from './components/Home';
+import Mockup from './components/Mockup';
+import Login from './components/Login';
+import Logout from './components/Logout';
 
 
 function App() {
@@ -24,7 +27,16 @@ function App() {
          </Link>
          <Link to="/Galeria" className="btn btn-dark">
           Galeria
-         </Link>     
+         </Link> 
+         <Link to="/Mockup" className="btn btn-dark">
+          Mockup
+         </Link>  
+         <Link to="/Login" className='btn btn-dark'>
+         Login
+         </Link>  
+         <Link to="/Logout" className='btn btn-dark'>
+         Logout
+         </Link>   
         </div>
          <hr/>
           <Switch>
@@ -39,7 +51,16 @@ function App() {
            </Route> 
            <Route path="/Galeria">
             <Example />
-           </Route>       
+           </Route> 
+           <Route path="/Mockup">
+            <Mockup />
+           </Route> 
+           <Route path="/Login">
+            <Login />
+           </Route>     
+           <Route path="/Logout">
+            <Logout />
+           </Route>   
           </Switch>
     </div>    
    </Router>
