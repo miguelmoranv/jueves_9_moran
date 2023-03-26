@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 
 class Home extends Component{
     render(){
@@ -38,6 +39,16 @@ class Home extends Component{
                                     <Card.Text>Este metodo es obligatorio en cualquier componente, pues como su nombre lo dice, se utiliza para obtener los elementos
                                         finales a visualizar o pintar en el navegador. Debe ser una funcion pura, es decir, no debe modificar las props, no debe modificar
                                         el state ni realizar operaciones del DOM.
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            </Col>
+                            <Col className="mt-3">
+                            <Card  >
+            <Card.Body>
+                                    <Card.Title className='text-primary'>Link a proyecto Git</Card.Title>
+                                    <Card.Text>
+                                    <Button variant="primary" href='https://github.com/miguelmoranv/jueves_9_moran'>Proyecto</Button>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
